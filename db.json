@@ -1,0 +1,200 @@
+{
+  "seller": [
+    {
+      "name": "Jhon Doe",
+      "email": "jhondoe123@live.cl",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Aleister Crowley",
+      "email": "the_beast@gmail.com",
+      "password": "666-93-666",
+      "id": 2
+    },
+    {
+      "name": "George Harrison",
+      "password": "123456",
+      "email": "beatle_3@hotmail.com",
+      "id": 3
+    },
+    {
+      "name": "Paul MaCartney",
+      "password": "123456",
+      "email": "beatle_2@hotmail.com",
+      "id": 4
+    },
+    {
+      "name": "Jhon Lennon",
+      "password": "123456",
+      "email": "beatle_1@hotmail.com",
+      "id": 5
+    },
+    {
+      "name": "Jhon Lennon",
+      "password": "123456",
+      "email": "beatle_1@hotmail.com",
+      "id": 6
+    },
+    {
+      "name": "Ringo Starr",
+      "password": "123456",
+      "email": "beatle_4@hotmail.com",
+      "id": 7
+    },
+    {
+      "name": "Jhon Doe",
+      "password": "123456",
+      "email": "jhondoe2023@gmail.com",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "name": "Iphone 14 pro",
+      "price": "790000",
+      "color": "Black",
+      "category": "smartphone",
+      "details": "Lo nuevo de Apple para todos los idiotas fieles",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images",
+      "id": 1
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra",
+      "price": "1640000",
+      "color": "white",
+      "category": "Smartphone",
+      "details": "Lo último de la gama alta de Samsung",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fscr.wfcdn.de%2F25940%2FSamsung-Galaxy-S23-Ultra-1673639126-0-0.jpg&f=1&nofb=1&ipt=148536c8b45984e6ffaf7e7e164f0f204701db85443cd93a3f9504a38e6072f9&ipo=images",
+      "id": 2
+    },
+    {
+      "name": "Notebook Lenovo Legion 5 Y530",
+      "price": "420000",
+      "color": "black",
+      "category": "Notebook",
+      "details": "Portatil Lenovo de su línea gamer Legion 5",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpublicapi.solotodo.com%2Fproducts%2F79986%2Fpicture%2F%3Fimage_format%3DJPEG%26quality%3D80%26width%3D1200%26height%3D650&f=1&nofb=1&ipt=6188bf0a4e1980a37e9daf89655dbb767abf1d098b363563d343a312434a4eb4&ipo=images",
+      "id": 3
+    },
+    {
+      "name": "MacBook Air Pro M2",
+      "price": "895000",
+      "color": "silver",
+      "category": "Notebook",
+      "details": "MacBook Air Pro con el nuevo procesador M2",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphotos5.appleinsider.com%2Fgallery%2F41639-80729-000-lead-MacBook-Pro-xl.jpg&f=1&nofb=1&ipt=ae46aa0f6de7e1d6ee3ada69fce78961171e41225016234cadc8e2ad6d4e87af&ipo=images",
+      "id": 4
+    },
+    {
+      "name": "Zapatillas NIKE Volver al Futuro",
+      "price": "260000",
+      "color": "gray",
+      "category": "Shoes",
+      "details": "Calzado NIKE Edición especial \"Back to Future\" disponibles en 40 - 45",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.yimg.com%2Fuu%2Fapi%2Fres%2F1.2%2Fnm2T6BVPenNtyKZcy7MBjw--~B%2FaD02ODM7dz0xMDI0O3NtPTE7YXBwaWQ9eXRhY2h5b24-%2Fhttp%3A%2F%2Fmedia.zenfs.com%2Fen-US%2Fhomerun%2Ffootwear_news_642%2F53ef4f8b493b31e8059d44cbd897f11f&f=1&nofb=1&ipt=5d2cd72268019285a27e541342ffba61c06b92bd2318231e25de7f5a2c9c02e2&ipo=images",
+      "id": 5
+    },
+    {
+      "name": "Zapatillas Addidas Predator",
+      "price": "89000",
+      "color": "black",
+      "category": "Shoe",
+      "details": "Zapatillas deportivas modelo Predator N°s disponibles 43-44",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Fzapatillas-adidas-predator-183-fg-prime-grass-sintetico-D_NQ_NP_843770-MPE26543618697_122017-F.jpg&f=1&nofb=1&ipt=4a322e2f2b66012f52d94dae583be8bc3e0a6f6aa6adf3c6da3dd34795744ca2&ipo=images",
+      "id": 6
+    },
+    {
+      "name": "Guantes de Box Venum",
+      "price": "35000",
+      "color": "black",
+      "category": "Sport",
+      "details": "Guantes para Boxeo profesional en 14oz y 16oz",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.d987D3QnUC2I7HvgtlTQYgHaI5%26pid%3DApi&f=1&ipt=c3ebcb711b5ac19583ed1de91536912ba1a865cd40bf71d5f871a197a6b37ed3&ipo=images",
+      "id": 7
+    },
+    {
+      "name": "Anillo Ceremonial Masón",
+      "price": "650000",
+      "color": "gold",
+      "category": "Jewelry",
+      "details": "Anillo de ceremonia con símbolo masón de oro 18k",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Fanillo-masonico-ceremonial-templario-acero-316-chapa-de-oro-D_NQ_NP_9110-MLM20012750497_112013-F.jpg&f=1&nofb=1&ipt=52926647aca6c383a0b1957c1ce7c39cac2068755b3bcf0ce9ad6682c43bb462&ipo=images",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "name": "usuario1",
+      "email": "usuario1@gmail.com",
+      "pwd": "123456",
+      "id": 1
+    },
+    {
+      "name": "usuario2",
+      "email": "usuario2@gmail.com",
+      "pwd": "123456",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "Iphone 14 pro",
+      "price": "790.000",
+      "color": "black",
+      "category": "smartphone",
+      "details": "Lo nuevo de Apple para todos los idiotas fieles",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "Notebook Lenovo Legion 5 Y530",
+      "price": "420.000",
+      "color": "black",
+      "category": "Notebook",
+      "details": "Portatil Lenovo de su línea gamer Legion 5",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpublicapi.solotodo.com%2Fproducts%2F79986%2Fpicture%2F%3Fimage_format%3DJPEG%26quality%3D80%26width%3D1200%26height%3D650&f=1&nofb=1&ipt=6188bf0a4e1980a37e9daf89655dbb767abf1d098b363563d343a312434a4eb4&ipo=images",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 3,
+      "id": 2
+    },
+    {
+      "name": "Iphone 14 pro",
+      "price": "790.000",
+      "color": "black",
+      "category": "smartphone",
+      "details": "Lo nuevo de Apple para todos los idiotas fieles",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 3
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra",
+      "price": "1.640.000",
+      "color": "white",
+      "category": "Smartphone",
+      "details": "Lo último de la gama alta de Samsung",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fscr.wfcdn.de%2F25940%2FSamsung-Galaxy-S23-Ultra-1673639126-0-0.jpg&f=1&nofb=1&ipt=148536c8b45984e6ffaf7e7e164f0f204701db85443cd93a3f9504a38e6072f9&ipo=images",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 2,
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "email": "randomuser@gmail.com",
+      "address": "Av. Mispe Lottas #56",
+      "contact": "956456252",
+      "totalPrice": 447000,
+      "userId": 2,
+      "id": 1
+    }
+  ]
+}

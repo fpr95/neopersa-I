@@ -1,0 +1,128 @@
+<ngb-carousel *ngIf="popularProducts">
+	<ng-template *ngFor="let item of popularProducts" ngbSlide>
+		<div class="picsum-img-wrapper">
+			<a routerLink="/details/{{item.id}}">
+                <img class="product-header-img" 
+                src="{{ item.image }}" 
+                alt="Random first slide" />
+            </a>
+		</div>
+		<div class="carousel-caption">
+			<h3>{{ item.name }}</h3>
+			<p>{{ item.details }}</p>
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+<div class="product-list-wrapper">
+    <h1>Lo más visto</h1>
+    <div class="row">
+        <div class="col-sm-3" *ngFor="let item of trendyProducts">
+            <div class="product-item">
+            <!-- <div class="product-image"> -->
+                <img src="{{ item.image }}" />
+            <!-- </div> -->
+            <div class="product-details">
+                <h6 class="name-head">{{ item.name }}</h6>
+                <div class="product-price">
+                    <h6>Precio: ${{ item.price }}</h6>
+                </div>
+                <div class="product-color">
+                    <h6>Color: {{ item.color }}</h6>
+                </div>
+            </div>
+            <div class="product-footer">
+                <a routerLink="/details/{{item.id}}">Ver Detalles</a>
+                <a href="">Agregar al carro</a>
+            </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="col-sm-3">
+            <div class="product-item">
+                <div class="product-image">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images" />
+            </div>
+            <div class="product-details">
+                <h6 class="name-head">El último Iphone de Apple</h6>
+                <div class="product-price">
+                    <h6>Precio: $ 1.640.000</h6>
+                </div>
+                <div class="product-color">
+                    <h6>Color: Negro</h6>
+                </div>
+            </div>
+            <div class="product-footer">
+                <a href="">Ver Detalles</a>
+                <a href="">Agregar al carro</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="product-item">
+                <div class="product-image">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images" />
+            </div>
+            <div class="product-details">
+                <h6 class="name-head">El último Iphone de Apple</h6>
+                <div class="product-price">
+                    <h6>Precio: $ 1.640.000</h6>
+                </div>
+                <div class="product-color">
+                    <h6>Color: Negro</h6>
+                </div>
+            </div>
+            <div class="product-footer">
+                <a href="">Ver Detalles</a>
+                <a href="">Agregar al carro</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="product-item">
+                <div class="product-image">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images" />
+            </div>
+            <div class="product-details">
+                <h6 class="name-head">El último Iphone de Apple</h6>
+                <div class="product-price">
+                    <h6>Precio: $ 1.640.000</h6>
+                </div>
+                <div class="product-color">
+                    <h6>Color: Negro</h6>
+                </div>
+            </div>
+            <div class="product-footer">
+                <a href="">Ver Detalles</a>
+                <a href="">Agregar al carro</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="product-item">
+                <div class="product-image">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.xcite.com%2Fmedia%2Fcatalog%2Fproduct%2F%2Fi%2Fp%2Fiphone_14_pro_-_black_1_4.jpg&f=1&nofb=1&ipt=1ebe10b1a9cc5fad4051bcb4cfd16a5305e4f49bc585f7f4a16ed38f4a57beef&ipo=images" />
+            </div>
+            <div class="product-details">
+                <h6 class="name-head">El último Iphone de Apple</h6>
+                <div class="product-price">
+                    <h6>Precio: $ 1.640.000</h6>
+                </div>
+                <div class="product-color">
+                    <h6>Color: Negro</h6>
+                </div>
+            </div>
+            <div class="product-footer">
+                <a href="">Ver Detalles</a>
+                <a href="">Agregar al carro</a>
+            </div>
+            </div>
+        </div>
+        -->
+    </div>
+
+</div>
