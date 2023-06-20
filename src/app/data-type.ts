@@ -15,6 +15,13 @@ export interface product{
     category:string,
     color:string,
     details:string,
+
+    subCategory:undefined | string,
+    specifications:undefined | string,
+    material:undefined | string,
+    brand:undefined | string,
+    hasDiscount:undefined | boolean,
+
     image:string,
     quantity:undefined | number,
     id:number,
@@ -49,4 +56,10 @@ export interface order{
     totalPrice:number,
     userId:number,
     id:number | undefined
+}
+
+export interface tab {
+    title:string,
+    url:string,
+    isActive:boolean
 }

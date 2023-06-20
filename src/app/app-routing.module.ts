@@ -12,6 +12,7 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { HomeWomanComponent } from './home-woman/home-woman.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,10 @@ const routes: Routes = [
   {
     component: MyOrdersComponent,
     path:'my-orders'
+  },
+  {
+    component: HomeWomanComponent,
+    path: 'home-tab01'
   }
 ];
 

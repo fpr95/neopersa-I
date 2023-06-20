@@ -1,9 +1,141 @@
-<!-- <div class="public-space-1">
-    <h1>prueba espacio publicitario 1</h1>
+<div class="container-public-space-1" style="background-color: black;height: 3rem;">
+  <div class="public-space-1" style="max-height: 3rem; overflow: hidden;">
+    <!-- Here goes some pubicity img(gif) -->
+  </div>
 </div>
--->
+
+<nav class="navbar navbar-expand-lg bg-light d-flex">
+  <div class="container-fluid mx-4">
+    <a class="navbar-brand" routerLink="/">NEOPERSA</a>
+    <button class="navbar-toggler" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" 
+    aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+    [collapse]="isCollapsed" [isAnimated]="true">
+
+      <div *ngIf="menuType !== 'seller'" class="d-flex ms-auto me-0" role="search">
+        <input class="form-control me-1" type="search" placeholder="Buscar producto, marca, color..."
+          aria-label="Search" style="max-width: 90rem;" #searchInput (keyup)="searchProducts($event)"
+          (blur)="hideSearch()">
+        <button (click)="submitSearch(searchInput.value)" class="btn btn-outline-primary"><i-bs name="search" width="1.3rem" height="1.3rem"></i-bs></button>
+        <!--
+            <ul class="suggested-result" *ngIf="searchResult">
+                <li *ngFor="let item of searchResult">
+                    <a (mousedown)="redirectToDetails(item.id)">{{ item.name }}</a>
+                </li>
+            </ul>
+            -->
+      </div>
+
+      <div class="mx-auto" style="align-items: center;">
+        <p class="my-auto"><span style="color: red;">10%</span> OFF en tu primer envío</p>
+      </div>
+
+      <div [ngSwitch]="menuType">
+        <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/seller-auth">Vendedor(a)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" routerLink="/"><i-bs name="house" width="1.3rem" height="1.3rem"></i-bs></a>
+          </li>
+          <li class="nav-item dropdown" dropdown>
+            <!--
+            <a class="nav-link dropdown-toggle" 
+                href="#" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+              Usuario
+            </a>
+            -->
+            <a class="nav-link dropdown-toggle" id="user-dropdown" dropdownToggle aria-controls="basic-link-dropdown">
+              <i-bs name="person-circle" width="1.3rem" height="1.3rem"></i-bs>
+            </a>
+            <ul id="user-dropdown-options" *dropdownMenu class="dropdown-menu" role="menu"
+              aria-labelledby="user-dropdown">
+              <li><a class="dropdown-item" routerLink="/user-auth">Iniciar Sesión</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" routerLink="/user-auth">Registrarme</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i-bs name="cart2" width="1.3rem" height="1.3rem"></i-bs>({{ cartItems }})</a>
+          </li>
+        </ul>
+
+
+        <ul *ngSwitchCase="'user'" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/seller-auth">Creador(a)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Inicio</a>
+          </li>
+          <li class="nav-item dropdown" dropdown>
+            <a class="nav-link dropdown-toggle" href="#" id="user-dropdown" dropdownToggle
+              aria-controls="basic-link-dropdown">
+              {{ userName | titlecase }}
+            </a>
+            <ul id="user-dropdown-options" *dropdownMenu class="dropdown-menu" role="menu"
+              aria-labelledby="user-dropdown">
+              <li><a class="dropdown-item" routerLink="my-orders">Mis Ordenes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" (click)="userLogout()">Cerrar Sesión</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="cartItems>0?'/cart-page':null"><i-bs name="cart2"></i-bs>({{ cartItems
+              }})</a>
+          </li>
+        </ul>
+
+        <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/seller-auth">Listado Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/seller-add-product">Agregar Producto</a>
+          </li>
+          <li class="nav-item dropdown" dropdown>
+            <a class="nav-link dropdown-toggle" href="#" id="user-dropdown" dropdownToggle
+              aria-controls="basic-link-dropdown">
+              {{ sellerName | titlecase }}
+            </a>
+            <ul id="user-dropdown-options" *dropdownMenu class="dropdown-menu" role="menu"
+              aria-labelledby="user-dropdown">
+              <!--
+                  <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                -->
+              <li><a class="dropdown-item" (click)="logout()">Cerrar Sesión</a></li>
+            </ul>
+          </li>
+          <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carro(0)</a>
+            </li>
+            -->
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<!--
 <nav class="nav">
-    <h1><a routerLink="/">NEOPERSA</a></h1>
+    <h1><a routerLink="/">neoPersa</a></h1>
     <div *ngIf="menuType !== 'seller'" class="nav-search">
         <input type="text" 
         #searchInput
@@ -22,7 +154,7 @@
             <li><a routerLink="/seller-auth">Seller</a></li>
             <li><a routerLink="/">Inicio</a></li>
             <li><a routerLink="/user-auth">Iniciar Sesión | Registrarse</a></li>
-            <li><a href="#">Carro({{ cartItems }})</a></li>
+            <li><a href="#"><i-bs name="cart2"></i-bs>({{ cartItems }})</a></li>
         </ul>
 
         <ul *ngSwitchCase="'user'">
@@ -42,3 +174,4 @@
         </ul>
     </div>
 </nav>
+-->

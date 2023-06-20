@@ -20,6 +20,51 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { 
+  house, 
+  cart2, 
+  personCircle, 
+  search, 
+  caretRight, 
+  record2Fill, 
+  facebook, 
+  instagram, 
+  twitter, 
+  pinterest,
+  cartPlus,
+  cartDash,
+  star,
+  dot,
+  bookmarkHeart } from 'ngx-bootstrap-icons';
+import { CategoryTabsComponent } from './category-tabs/category-tabs.component';
+import { HomeWomanComponent } from './home-woman/home-woman.component';
+import { HomeManComponent } from './home-man/home-man.component';
+
+
+const icons = {
+  house,
+  cart2,
+  personCircle,
+  search,
+  caretRight,
+  record2Fill,
+  facebook,
+  instagram,
+  twitter,
+  pinterest,
+  cartPlus,
+  cartDash,
+  star,
+  dot,
+  bookmarkHeart
+};
 
 @NgModule({
   declarations: [
@@ -36,7 +81,10 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     UserAuthComponent,
     CartPageComponent,
     CheckoutComponent,
-    MyOrdersComponent
+    MyOrdersComponent,
+    CategoryTabsComponent,
+    HomeWomanComponent,
+    HomeManComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +92,14 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    NgxBootstrapIconsModule.pick(icons),
+    BsDropdownModule,
+    TabsModule.forRoot(),
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

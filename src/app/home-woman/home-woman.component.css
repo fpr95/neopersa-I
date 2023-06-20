@@ -1,0 +1,260 @@
+slide {
+    /*height: 630px; */
+    max-width: 1300px;
+}
+/*
+.week-sale-container {
+    width: 80vw;
+    /* height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+*/
+
+.section-header {
+    width: 100%;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+/*
+.section-products {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+*/
+
+.product {
+    position: relative;
+    background-color: var(--sectionBack);
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition:  .3s;
+}
+
+/* B5 IMPL */
+.product-content {
+    /* box-shadow: 0 5px 8px rgba(0, 0, 0, .3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 15px 15px;
+    border-radius: 10px;
+    transition:  .3s;
+}
+
+/*
+.product:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+*/
+
+/* B5 IMPL */
+.product-content:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.product-img {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+}
+
+.product-img img {
+    max-width: 300px;
+}
+
+/* B5 IMPL */
+.product-content-img {
+    /* max-height: 300px; */
+    overflow: hidden;
+}
+
+.product-content-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    /*
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+    */
+    /* max-width: 300px; */
+}
+
+.namePrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.namePrice h3 {
+    font-size: 2em;
+    text-transform: capitalize;
+    color: black;
+}
+
+.namePrice span {
+    font-size: 1.5em;
+    color: coral;
+}
+
+.product p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.buy {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.buy button {
+    /* padding: 10px 10px; */
+    border-radius: 7px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    /* font-size: 15px; */
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buy button:hover {
+    transform: scale(1.1);
+}
+
+/* B5 IMPL */
+.card {
+    max-height: 520px;
+}
+
+.card-body {
+    height: auto;
+}
+
+.card-body .card-title {
+    max-height: 22.5px;
+    overflow-y: hidden;
+}
+
+.card-body p {
+    height: 90px;
+    overflow-y: hidden;
+}
+
+.card-footer{
+    height: 90px;
+    justify-content: inherit;
+    display: inherit;
+}
+
+.cart-button {
+    /* padding: 10px 20px; */
+    border-radius: 7px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    /* font-size: 18px; */
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    right: 20px;
+}
+
+.price {
+    display: grid;
+    align-items: end;
+}
+
+.prev-price {
+    text-decoration: line-through;
+    color: #ff3232;
+}
+
+.new-price {
+    color: black;
+    font-size: large;
+}
+
+.cart-button {
+    font-size: small;
+}
+
+.cart-button:hover {
+    transform: scale(1.1);
+}
+
+.category-img:hover {
+    transform: scale(1.1);
+    opacity: .8;
+    transition: .3s;
+}
+
+.slick-slide img {
+    display: initial !important;
+}
+
+/* section: "lo ultmo en llegar" */
+
+
+.ratings i-bs {
+    color: coral;
+}
+
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 3px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.spec-1 {
+    color: #938787;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/*
+.para {
+    font-size: 16px;
+}
+*/
+
+.horizontal-product-img-container {
+    flex-direction: inherit;
+}
+
+.horizontal-product-img {
+    object-fit: cover;
+}

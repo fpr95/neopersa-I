@@ -1,0 +1,1084 @@
+<div class="home-woman-carousel mb-4">
+    <!--
+    <carousel [isAnimated]="true" class="m-auto">
+        <slide>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe1%2Fc0%2F9d%2Fe1c09d57a0aa792e014fa658a17295a0.jpg&f=1&nofb=1&ipt=b7ffb9f45a6c74f83461a21c56f52cb6a1966501fdd5b2722010f5354ed30c91&ipo=images"
+                alt="first slide" style="display: block; width: 100%; margin: auto">
+        </slide>
+        <slide>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod.s3.amazonaws.com%2Fimages%2Ffashion-tryp-3-1588168923.jpg&f=1&nofb=1&ipt=7d9f5eb7861164ec3afec00da41b414985db96890a0e34d300bd5d73d12d5b23&ipo=images"
+                alt="second slide" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fblack-women-model-glasses-jacket-fashion-leather-spring-clothing-photo-shoot-formal-wear-60069.jpg&f=1&nofb=1&ipt=2086b3e15eda76109ddbdcc4560795409f276dda2853a55c9c117098e8f8db19&ipo=images"
+                alt="third slide" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="/assets/img/carousel_6.png" alt="fourth slide" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+</div>
+-->
+
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfigInit">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide" style="height: 622px;">
+            <img src="{{ slide.img }}" width="99%" alt="">
+        </div>
+    </ngx-slick-carousel>
+</div>
+<!-- YT impl of card (/watch?v=C_usYJnyJ28) -->
+<!--
+<div class="container">
+    <div class="week-sale-container">
+        <div class="section-header">
+            <h2>OFERTAS DE LA SEMANA</h2>
+        </div>
+        <div class="section section-products">
+            <div class="product">
+                <div class="product-img">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Faudifono-bluetooth-huawei-am61-D_NQ_NP_934471-MLC26958902614_032018-F.jpg&f=1&nofb=1&ipt=a7640f26194c9f84b5bd0b62541fac950185421d042178751c4ffc4b2d71e20b&ipo=images"
+                        alt="">
+                </div>
+                <div class="namePrice">
+                    <h3>Audífonos Bluetooth Huawei</h3>
+                    <span>$ 15.990</span>
+                </div>
+
+                <p>Descripción breve, detalles y características
+                    del producto</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="buy">
+                    <button>Agregar al Carro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<hr>
+
+<div class="section-header mt-5">
+    <h5>🔥📆OFERTAS DE LA SEMANA📆🔥</h5>
+</div>
+
+<!-- <div class="row container my-5"> -->
+<!-- <div class="carousel-container container"> -->
+<ngx-slick-carousel class="carousel container row" #slickModal="slick-carousel" [config]="slideConfig">
+    <!-- <div class="slide row"> -->
+
+
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-pgJ4t-_NnVM%2FWBvhPy3zmLI%2FAAAAAAABfYI%2F_Sae_vCtLlIOiEGNjG82Blte34Tnx58NwCEw%2Fs1600%2Fcalzado%252Bfemenino%252Bsandalias%252B2017%252Bmoda%252Bmujer.jpg&f=1&nofb=1&ipt=b06b0d26f1a19c8ab50e4cbc0a18197c043d760d325934cb4af5337139aceb9c&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Calzado Mujer Eco-cuero</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.okchicas.com%2Fwp-content%2Fuploads%2F2018%2F01%2FAbrigos-oversized-2.jpg&f=1&nofb=1&ipt=90e214f6eeba6480128fbf49bc238530d0307872aea821c330e9d2cfb5162b0b&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Abrigo L Otoño/Invierno 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RI_7fJ4HDJJ7JidZv0WmbAAAAA%26pid%3DApi&f=1&ipt=45f30db23e7b47a12b4f58a51c35db81173673a83835c714ec4e1c1dd3864186&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Abrigo S Otoño/Invierno 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2Fcc%2Fb5%2F19ccb5d79bf8936e283a79e1cb168835.jpg&f=1&nofb=1&ipt=ede37ddb4c0aa9816d5e1246e8db4af0bb50e93155461becccf2e7fec7f95024&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Trajes de baño Curvy Moda 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MORE CARDS TO SHOW SLIDE IN ACTION -->
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RI_7fJ4HDJJ7JidZv0WmbAAAAA%26pid%3DApi&f=1&ipt=45f30db23e7b47a12b4f58a51c35db81173673a83835c714ec4e1c1dd3864186&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Abrigo S Otoño/Invierno 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2Fcc%2Fb5%2F19ccb5d79bf8936e283a79e1cb168835.jpg&f=1&nofb=1&ipt=ede37ddb4c0aa9816d5e1246e8db4af0bb50e93155461becccf2e7fec7f95024&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Trajes de baño Curvy Moda 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RI_7fJ4HDJJ7JidZv0WmbAAAAA%26pid%3DApi&f=1&ipt=45f30db23e7b47a12b4f58a51c35db81173673a83835c714ec4e1c1dd3864186&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Abrigo S Otoño/Invierno 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ngxSlickItem class="slide col">
+        <div class="card h-100 product-content mx-1 my-2"
+            style="height: 100%; margin-bottom: .5rem !important;margin-top: 1rem !important;">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2Fcc%2Fb5%2F19ccb5d79bf8936e283a79e1cb168835.jpg&f=1&nofb=1&ipt=ede37ddb4c0aa9816d5e1246e8db4af0bb50e93155461becccf2e7fec7f95024&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Trajes de baño Curvy Moda 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-container" style="display: contents;">
+                    <div class="price">
+                        <small class="prev-price">$15.000</small>
+                        <span class="new-price my-auto">$10.990</span>
+                    </div>
+                    <div class="col-sm-3 border-start border-end mx-1">
+
+                    </div>
+                    <div class="align-items-center align-content-center col-md-6 border-start mt-0">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-primary btn-sm" type="button">Detalles</button>
+                            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><i-bs name="cart-plus"
+                                    width="19" height="19" class="me-1"></i-bs>Agregar al Carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- </div> -->
+</ngx-slick-carousel>
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+<div class="container mt-5 mb-5">
+    <div class="row g-3">
+        <div class="col-6 bg-light" data-aos="fade-right">
+            <!-- <div class="container-img-2 p-1" style="width: auto;"> -->
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.pxhere.com%2Fphoto%2Fmodel-red-color-fashion-lady-performance-art-art-stage-dress-beauty-image-15403.jpg&f=1&nofb=1&ipt=8e8dadcef305f80037d28eda3ec05c57136cfaf0a545d03b71860c4b8c33e19a&ipo=images"
+                class="img-fluid" style="object-fit: cover;" alt="">
+            <!-- </div> -->
+        </div>
+
+        <div class="col-6 bg-light" data-aos="fade-left">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F75%2F82%2Fcb%2F7582cb48127c6a174b05961b317dfb63.jpg&f=1&nofb=1&ipt=6a15f0fdf9eb65fdb889908425b123b944f2de03bcd755c490657395cc0821bf&ipo=images"
+                class="img-fluid" style="object-fit: cover;" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="section-header mb-2">
+        <h3>🫣OTRAS CATEGORÍAS👀</h3>
+    </div>
+    <div class="row g-3 mt-3" data-aos="fade-up">
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Temporada</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthecitizen.es%2Fwp-content%2Fuploads%2F2021%2F09%2FIMG_0008-e1630734900552.jpeg&f=1&nofb=1&ipt=0e014d2ac0e73689e01954e2946b3edbc1e8fc866ed54e96986720c8a207ad19&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Fitness</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fel124.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fdeporte-mundo-fit-7-1024x1024.jpg&f=1&nofb=1&ipt=228c3c0d767d166111ef5e130ab9c29f609056b67694f8889eb0963307e8821d&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Infantil</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fcd%2F77%2F0e%2Fcd770e24bdaba052f4facb5781d4fae7.jpg&f=1&nofb=1&ipt=db89c825cd711d1e91f699788a207e53ccf91b14797edf9e568717e581fc92b0&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Calzado</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F28%2F5d%2F88%2F285d88e79fa8a0bc7e039377717ade95.jpg&f=1&nofb=1&ipt=004ff02b382736c1ebb5bcfc23ee783a6df6a7d9e2e247789a14c3d0fd84f548&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Curvy</strong></h5>
+            <a href="#">
+                <img src="https://i.pinimg.com/originals/0d/52/cc/0d52ccb37c9037d533d911dfce80c20e.jpg"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Aesthetic</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-VG0TLaQ6yU8%2FYHNxjiFOkpI%2FAAAAAAABvew%2FDkqqN5Z99qIFIOL5ehlwKZbwGNAxVL1cgCLcBGAsYHQ%2Fs1292%2Fpantalones%252Bde%252Bjeans%252Btiro%252Balto%252Boxford%252Bdesflecado%252Binvierno%252B2021%252Bmoda%252Binvierno%252B2021.jpg&f=1&nofb=1&ipt=95d952f587779efc1cdf1ff960a6f877e037303dd0e96c42b0f387e628901c60&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Accesorios</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2a%2F37%2F37%2F2a37371e12f0ab78d74cc4378333203f.jpg&f=1&nofb=1&ipt=76d7c13c251a637cf0d1aaa6e2ba1a6e89b599c03e1bd276837cbf3a713daf7a&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+        <div class="col-3 d-grid justify-content-center">
+            <h5 style="text-align: center;"><strong>Lencería</strong></h5>
+            <a href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Fbaby-doll-lenceria-sexyatrevete-lenceria-peru-D_NQ_NP_833569-MPE25646845940_062017-F.jpg&f=1&nofb=1&ipt=87f97c2ce588287ff6cd97a769ccdf3671cb4889eedcd0206b406296f97aad42&ipo=images"
+                    class="img-fluid category-img"
+                    style="border-radius: 50%; border:5px solid #ff3232; padding: 2px; height: 150px; width: 150px; object-fit: cover;"
+                    alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap page impl of card -->
+
+<!--
+<div class="container row row-cols-1 row-cols-md-4 g-4 mt-5 mb-3">
+    <div class="section-header">
+        <h3>⏱️LO ÚLTIMO EN LLEGAR⏱️</h3>
+    </div>
+    <div class="col">
+        <div class="card h-100 product-content">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-pgJ4t-_NnVM%2FWBvhPy3zmLI%2FAAAAAAABfYI%2F_Sae_vCtLlIOiEGNjG82Blte34Tnx58NwCEw%2Fs1600%2Fcalzado%252Bfemenino%252Bsandalias%252B2017%252Bmoda%252Bmujer.jpg&f=1&nofb=1&ipt=b06b0d26f1a19c8ab50e4cbc0a18197c043d760d325934cb4af5337139aceb9c&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Calzado Mujer Eco-cuero</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <span class="price my-auto">$ 10.990</span>
+                <button class="btn cart-button">Agregar al Carro</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 product-content">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.okchicas.com%2Fwp-content%2Fuploads%2F2018%2F01%2FAbrigos-oversized-2.jpg&f=1&nofb=1&ipt=90e214f6eeba6480128fbf49bc238530d0307872aea821c330e9d2cfb5162b0b&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Abrigo L Otoño/Invierno 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <span class="price my-auto">$ 19.990</span>
+                <button class="btn cart-button">Agregar al Carro</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 product-content">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RI_7fJ4HDJJ7JidZv0WmbAAAAA%26pid%3DApi&f=1&ipt=45f30db23e7b47a12b4f58a51c35db81173673a83835c714ec4e1c1dd3864186&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Abrigo S Otoño/Invierno 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <span class="price my-auto">$ 13.000</span>
+                <button class="btn cart-button">Agregar al Carro</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 product-content">
+            <div class="product-content-img">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2Fcc%2Fb5%2F19ccb5d79bf8936e283a79e1cb168835.jpg&f=1&nofb=1&ipt=ede37ddb4c0aa9816d5e1246e8db4af0bb50e93155461becccf2e7fec7f95024&ipo=images"
+                    class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Trajes de baño Curvy Moda 2023</strong></h5>
+                <hr>
+                <p class="card-text text-muted">
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba2.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba3.
+                    Detalles varios y una descipción breve del producto que aparece en la imagen arriba4.
+                </p>
+            </div>
+            <div class="card-footer">
+                <span class="price my-auto">$ 19.990</span>
+                <button class="btn cart-button">Agregar al Carro</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+-->
+
+
+<div class="container mt-5 mb-2">
+    <div class="section-header">
+        <h3>⏱️LO ÚLTIMO EN LLEGAR⏱️</h3>
+    </div>
+</div>
+
+
+<!-- horizontal cards bbbotstrap impl -->
+
+<div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-11">
+
+
+            <div class="row g-5 align-items-baseline">
+                <div class="col-md-6">
+
+
+                    <div class="row p-2 bg-white border rounded">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/QpjAiHq.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant olap shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">4,0</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$13.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$18.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                    <div class="row p-2 bg-white border rounded mt-2">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/JvPeqEF.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant trident shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">3,5</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$14.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$21.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- row 2-->
+
+            <div class="row g-5 align-items-baseline">
+                <div class="col-md-6">
+
+
+                    <div class="row p-2 bg-white border rounded">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/QpjAiHq.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant olap shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">4,0</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$13.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$18.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                    <div class="row p-2 bg-white border rounded mt-2">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/JvPeqEF.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant trident shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">3,5</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$14.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$21.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- row 3 -->
+
+            <div class="row g-5 align-items-baseline">
+                <div class="col-md-6">
+
+
+                    <div class="row p-2 bg-white border rounded">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/QpjAiHq.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant olap shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">4,0</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$13.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$18.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                    <div class="row p-2 bg-white border rounded mt-2">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/JvPeqEF.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant trident shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">3,5</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$14.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$21.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- row 4 -->
+
+            <div class="row g-5 align-items-baseline">
+                <div class="col-md-6">
+
+
+                    <div class="row p-2 bg-white border rounded">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/QpjAiHq.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant olap shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">4,0</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$13.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$18.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                    <div class="row p-2 bg-white border rounded mt-2">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/JvPeqEF.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant trident shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">3,5</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$14.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$21.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- row 5 -->
+
+            <div class="row g-5 align-items-baseline">
+                <div class="col-md-6">
+
+
+                    <div class="row p-2 bg-white border rounded">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/QpjAiHq.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant olap shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">4,0</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$13.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$18.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                    <div class="row p-2 bg-white border rounded mt-2">
+                        <div class="col-md-6 mt-1 d-flex horizontal-product-img-container"><img
+                                class="img-fluid img-responsive rounded horizontal-product-img"
+                                src="https://i.imgur.com/JvPeqEF.jpg"></div>
+                        <div class="col d-grid mt-1">
+                            <h5>Quant trident shirts</h5>
+                            <div class="d-flex flex-row">
+                                <div class="ratings mr-2 text-muted"><i-bs name="star" class="me-1"></i-bs></div><span
+                                    class="text-muted">3,5</span>
+                            </div>
+                            <!--
+                    <div class="mt-1 mb-1 spec-1"><span>100% Algodón</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    -->
+                            <div class="d-flex flex-row" style="overflow: hidden;">
+                                <p class="text-justify spec-1 para mb-0">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form,
+                                    by injected humour, or randomised words which don't look even slightly believable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center align-content-center col-md-3 border-start mt-1">
+                            <div class="d-grid flex-row align-items-center">
+                                <h4 class="mr-1 mb-0">$14.990</h4><span class="strike-text mb-2"><small
+                                        class="prev-price">$21.990</small></span>
+                            </div>
+                            <h6 class="text-success">Envío Gratuito</h6>
+                            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
+                                    type="button">Detalles</button><button class="btn btn-outline-primary btn-sm mt-2"
+                                    type="button"><i-bs name="cart-plus" width="19" height="19"
+                                        class="me-1"></i-bs>Agregar al Carro</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!--
+            <div class="row p-2 bg-white border rounded mt-2">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://i.imgur.com/Bf4dIaN.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5>Quant ruybi shirts</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>123</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-1">$13.99</h4><span class="strike-text">$20.99</span>
+                    </div>
+                    <h6 class="text-success">Free shipping</h6>
+                    <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button></div>
+                </div>
+            </div>
+            <div class="row p-2 bg-white border rounded mt-2">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://i.imgur.com/HO8e9b8.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5>Quant tinor shirts</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>110</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-1">$15.99</h4><span class="strike-text">$21.99</span>
+                    </div>
+                    <h6 class="text-success">Free shipping</h6>
+                    <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button></div>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+</div>

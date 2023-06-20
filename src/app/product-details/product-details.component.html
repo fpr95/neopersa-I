@@ -1,3 +1,4 @@
+<!--
 <div class="row product-details" *ngIf="productData">
     <div class="col-sm-6">
         <img class="product-image" src="{{ productData.image }}" alt="">
@@ -22,4 +23,421 @@
         </div>
     </div>
     </div>
+</div>
+-->
+
+
+
+<!-- 1st impl -->
+<!--
+
+<div *ngIf="productData">
+
+
+    <section class="section product" aria-label="product">
+        <div class="container">
+          <div class="product-slides">
+            <div class="slider-banner" data-slider>
+              <figure class="product-banner">
+                <img src="{{ productData.image }}" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover img-fluid">
+              </figure>
+              <figure class="product-banner">
+                <img src="{{ productData.image }}" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+              <figure class="product-banner">
+                <img src="{{ productData.image }}" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+              <figure class="product-banner">
+                <img src="{{ productData.image }}" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+            </div>
+            <button class="slide-btn prev" aria-label="Previous image" data-prev>
+              <i-bs name="star" aria-hidden="true"></i-bs>
+            </button>
+            <button class="slide-btn next" aria-label="Next image" data-next>
+              <i-bs name="star" aria-hidden="true"></i-bs>
+            </button>
+          </div>
+          <div class="product-content">
+            <p class="product-subtitle">Nike Company</p>
+            <h1 class="h1 product-title">Fall Limited Edition Sneakers</h1>
+            <p class="product-text">
+              These low-profile sneakers are your perfect casual wear companion. Featuring a
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="wrapper">
+              <span class="price" data-total-price>${{ productData.price }}</span>
+              <span class="badge">50%</span>
+              <del class="del">$1.620.000</del>
+            </div>
+            <div class="btn-group">
+              <div class="counter-wrapper">
+                <button class="counter-btn" data-qty-minus>
+                  <i-bs name="star"></i-bs>
+                </button>
+                <span class="span" data-qty>1</span>
+                <button class="counter-btn" data-qty-plus>
+                  <i-bs name="star"></i-bs>
+                </button>
+              </div>
+              <button class="cart-btn">
+                <i-bs name="cart-plus" aria-hidden="true"></i-bs>
+                <span class="span">Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</div>
+-->
+
+<!-- 2nd impl -->
+
+<div *ngIf="productData">
+
+  <!-- ============== SECTION CONTENT ============== -->
+  <section class="mt-5">
+    <div class="container">
+
+      <div class="row">
+        <aside class="col-lg-6">
+
+          <!--
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                  <img src="{{ productData.image }}" class="rounded">
+                </div>
+                <div class="carousel-item"> 
+                  <img src="https://i.imgur.com/vgMi4nw.jpg" class="rounded"> 
+                </div>
+                <div class="carousel-item"> 
+                  <img src="https://i.imgur.com/hRlGe10.jpg" class="rounded"> 
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          
+            <ol class="carousel-indicators list-inline mb-5">
+                <li class="list-inline-item active"> 
+                  <a id="carousel-selector-0" data-bs-slide="0" data-bs-target="#myCarousel" class="selected"> 
+                    <img src="{{ productData.image }}" class="img-fluid rounded">
+                  </a> 
+                </li>
+                <li class="list-inline-item"> 
+                  <a id="carousel-selector-1" data-bs-slide="1" data-bs-target="#myCarousel"> 
+                    <img src="https://i.imgur.com/vgMi4nw.jpg" class="img-fluid rounded">
+                  </a> 
+                </li>
+                <li class="list-inline-item"> 
+                  <a id="carousel-selector-2" data-bs-slide="1" data-bs-target="#myCarousel"> 
+                    <img src="https://i.imgur.com/hRlGe10.jpg" class="img-fluid rounded">
+                  </a> 
+                </li>
+            </ol>  
+          </div>
+          -->
+
+          
+          <article class="gallery-wrap">
+            <div class="img-big-wrap img-thumbnail">
+              <a data-fslightbox="mygalley" data-type="image" href="#">
+                <img class="img-fluid" style="height:560px; object-fit: contain;" src="{{ productData.image }}">
+              </a>
+            </div> 
+            <!-- img-big-wrap.// -->
+            
+            <div class="thumbs-wrap d-flex justify-content-evenly my-4">
+              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
+              </a>
+              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
+              </a>
+              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
+              </a>
+              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
+              </a>
+              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
+              </a>
+            </div> 
+            <!-- thumbs-wrap.// -->
+          </article>
+          <!-- gallery-wrap .end// -->
+
+        </aside>
+        <main class="col-lg-6">
+          <article class="ps-lg-3">
+            <h1 class="title text-dark">{{ productData.name }}</h1>
+            <div class="rating-wrap my-3">
+              <!--
+        <ul class="rating-stars">
+        <li style="width:80%" class="stars-active"> <i-bs name="star"></i-bs> </li>
+        <li> <img src="assets/images/misc/starts-disable.svg" alt=""> </li>
+        </ul>
+        -->
+              <b class="label-rating text-warning"><i-bs name="star"></i-bs> 4.5</b>
+              <i-bs name="dot"></i-bs>
+              <span class="label-rating text-muted"> <i-bs name="cart-plus"></i-bs> 24 ordenes </span>
+              <i-bs name="dot"></i-bs>
+              <span class="label-rating text-success">Stock por confirmar</span>
+              <i-bs name="dot" *ngIf="productData.hasDiscount"></i-bs>
+              <small *ngIf="productData.hasDiscount"><span class="discount-badge">15%</span></small>
+            </div> <!-- rating-wrap.// -->
+
+            <div class="mb-3">
+              <span class="product-price h3">$ {{ productData.price }}</span>
+              <span class="text-muted"> /por unidad</span>
+            </div>
+
+            <p>{{ productData.details }}</p>
+
+            <dl class="row">
+              <dt class="col-3">Color</dt>
+              <dd class="col-9">
+                <h5 [style.backgroundColor]="productData.color" class="product-color"></h5>
+              </dd>
+
+              <dt class="col-3">Categoría</dt>
+              <dd class="col-9" *ngIf="!productData.category"> - </dd>
+              <dd class="col-9" *ngIf="productData.category">{{ productData.category }}</dd>
+              <dd class="col-9" *ngIf="productData.category && productData.subCategory">{{ productData.category }}<i-bs
+                  name="dot"></i-bs>{{ productData.subCategory }}</dd>
+
+              <dt class="col-3">Material</dt>
+              <dd class="col-9" *ngIf="!productData.material"> - </dd>
+              <dd class="col-9" *ngIf="productData.material"> {{ productData.material }} </dd>
+
+              <dt class="col-3">Marca</dt>
+              <dd class="col-9" *ngIf="!productData.brand"> - </dd>
+              <dd class="col-9" *ngIf="productData.brand"> {{ productData.brand }} </dd>
+            </dl>
+
+            <hr>
+
+            <div class="row mb-4">
+
+              <div class="col-md-4 col-6 mb-2" *ngIf="productData.category == 'Clothes'">
+                <label class="form-label">Talla</label>
+                <select class="form-select">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+              </div> <!-- col.// -->
+
+              <div class="col-md-4 col-6 mb-3">
+                <label class="form-label d-block">Cantidad</label>
+                <div class="input-group input-spinner">
+                  <button class="btn btn-icon btn-light" (click)="handleQuantity('min')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24">
+                      <path d="M19 13H5v-2h14v2z"></path>
+                    </svg>
+                  </button>
+                  <input class="form-control text-center" placeholder="" value="{{ productQuantity }}">
+                  <button class="btn btn-icon btn-light" (click)="handleQuantity('plus')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24">
+                      <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                    </svg>
+                  </button>
+                </div> <!-- input-group.// -->
+              </div> <!-- col.// -->
+            </div> <!-- row.// -->
+
+            <div class="d-flex">
+              <button class="btn btn-warning me-1 action-btn"> Comprar </button>
+              <button *ngIf="!removeCart" class="btn btn-primary mx-1 action-btn" (click)="addToCart()"> <i-bs
+                  name="cart-plus" class="me-1" width="20" height="20"></i-bs> Agregar al Carro </button>
+              <button *ngIf="removeCart" class="btn btn-primary mx-1 action-btn"
+                (click)="removeFromCart(productData.id)"><i-bs name="cart-dash" class="me-1" width="20"
+                  height="20"></i-bs> Sacar del Carro </button>
+              <button class="btn btn-light ms-1 action-btn"><i-bs name="bookmark-heart" class="me-1" width="20"
+                  height="20"></i-bs> Guardar </button>
+            </div>
+
+          </article> <!-- product-info-aside .// -->
+        </main> <!-- col.// -->
+      </div> <!-- row.// -->
+
+    </div> <!-- container .//  -->
+  </section>
+  <!-- ============== SECTION CONTENT END// ============== -->
+
+  <!-- ============== SECTION  ============== -->
+  <section class="padding-y bg-light border-top mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- =================== COMPONENT SPECS ====================== -->
+          <div class="card mt-4">
+            <header class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a href="#" data-bs-target="#tab_specs" data-bs-toggle="tab" class="nav-link active">Detalles</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" data-bs-target="#tab_warranty" data-bs-toggle="tab" class="nav-link">Garantía</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" data-bs-target="#tab_shipping" data-bs-toggle="tab" class="nav-link">Envío</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" data-bs-target="#tab_seller" data-bs-toggle="tab" class="nav-link">Perfil del Vendedor</a>
+                </li>
+              </ul>
+            </header>
+
+            <div class="tab-content">
+              <article id="tab_specs" class="tab-pane show active card-body">
+                <p *ngIf="!productData.specifications" class="no-spec-p my-auto"> No hay más detalles disponibles</p>
+                <p *ngIf="productData.specifications">{{ productData.specifications }}</p>
+                <!--
+                <p>With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. </p>
+                <ul class="list-check cols-two">
+                  <li>Some great feature name here </li>
+                  <li>Lorem ipsum dolor sit amet, consectetur </li>
+                  <li>Duis aute irure dolor in reprehenderit </li>
+                  <li>Optical heart sensor </li>
+                  <li>Easy fast and ver good </li>
+                  <li>Some great feature name here </li>
+                  <li>Modern style and design</li>
+                </ul>
+                <table class="table border table-hover">
+                  <tr>
+                    <th> Display </th>
+                    <td> 13.3-inch LED-backlit display with IPS </td>
+                  </tr>
+                  <tr>
+                    <th> Processor capacity </th>
+                    <td> 2.3GHz dual-core Intel Core i5 </td>
+                  </tr>
+                  <tr>
+                    <th> Camera quality </th>
+                    <td>720p FaceTime HD camera </td>
+                  </tr>
+                  <tr>
+                    <th> Memory </th>
+                    <td> 8 GB RAM or 16 GB RAM </td>
+                  </tr>
+                  <tr>
+                    <th> Graphics </th>
+                    <td> Intel Iris Plus Graphics 640 </td>
+                  </tr>
+                </table>
+                -->
+              </article> <!-- tab-content.// -->
+
+              <article id="tab_warranty" class="tab-pane card-body">
+                Tab content or sample information now <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </article>
+
+              <article id="tab_shipping" class="tab-pane card-body">
+                Another tab content or sample information now <br>
+                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </article>
+              <article id="tab_seller" class="tab-pane card-body">
+                Some other tab content or sample information now <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </article>
+            </div>
+          </div>
+          <!-- =================== COMPONENT SPECS .// ================== -->
+        </div> <!-- col.// -->
+        <aside class="col-lg-4">
+          <!-- =================== COMPONENT ADDINGS ====================== -->
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Te Podría Interesar</h5>
+
+              <article class="itemside mb-3">
+                <a href="#" class="aside">
+                  <img src="{{ productData.image }}" width="96" height="96" class="img-md img-thumbnail">
+                </a>
+                <div class="info">
+                  <a href="#" class="title mb-1"> Rucksack Backpack Large <br> Line Mounts </a>
+                  <strong class="price"> $38.90</strong> <!-- price.// -->
+                </div>
+              </article>
+
+              <article class="itemside mb-3">
+                <a href="#" class="aside">
+                  <img src="{{ productData.image }}" width="96" height="96" class="img-md img-thumbnail">
+                </a>
+                <div class="info">
+                  <a href="#" class="title mb-1"> Summer New Men's Denim <br> Jeans Shorts </a>
+                  <strong class="price"> $29.50</strong> <!-- price.// -->
+                </div>
+              </article>
+
+              <article class="itemside mb-3">
+                <a href="#" class="aside">
+                  <img src="{{ productData.image }}" width="96" height="96" class="img-md img-thumbnail">
+                </a>
+                <div class="info">
+                  <a href="#" class="title mb-1"> T-shirts with multiple colors, for men and lady </a>
+                  <strong class="price"> $120.00</strong> <!-- price.// -->
+                </div>
+              </article>
+
+              <article class="itemside mb-3">
+                <a href="#" class="aside">
+                  <img src="{{ productData.image }}" width="96" height="96" class="img-md img-thumbnail">
+                </a>
+                <div class="info">
+                  <a href="#" class="title mb-1"> Blazer Suit Dress Jacket for Men, Blue color </a>
+                  <strong class="price"> $339.90</strong> <!-- price.// -->
+                </div>
+              </article>
+
+            </div> <!-- card-body .// -->
+          </div> <!-- card .// -->
+          <!-- =================== COMPONENT ADDINGS .// ================== -->
+        </aside> <!-- col.// -->
+      </div>
+
+      <br><br>
+
+    </div><!-- container // -->
+  </section>
+  <!-- =============== SECTION  END// ============== -->
+
+
 </div>

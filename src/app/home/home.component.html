@@ -1,3 +1,54 @@
+<div class="container container-public-space-2 mb-2" style="background-color: black;height: 9rem;">
+    <div class="public-space-2" style="max-height: 9rem; overflow: hidden;">
+      <!-- Here goes some pubicity img(gif) -->
+    </div>
+</div>
+
+<div style="height: 100%;">
+    
+    <tabset class="tabset">
+      <tab class="mt-2" heading="GENERAL" id="tab1">Comp General</tab>
+      <tab class="mt-2" heading="MUJER">
+        <app-home-woman></app-home-woman>
+      </tab>
+      <tab class="mt-2" heading="HOMBRE">
+        <app-home-man></app-home-man>
+      </tab>
+      <tab class="mt-2" heading="TECNOLOGÍA">Comp Tecnología</tab>
+      <tab class="mt-2" heading="DEPORTE">Comp Deporte</tab>
+      <tab class="mt-2" heading="HOGAR">Comp Hogar</tab>
+      <tab class="mt-2" heading="MASCOTAS">Comp Mascotas</tab>
+      <tab class="mt-2" heading="OTROS">Comp Otros</tab>
+      <tab class="mt-2" heading="MARKET DIGITAL">Comp Market Digital</tab>
+    </tabset>
+    
+
+    <!--
+        This way of routing the tabs to specifics urls will be placed
+        here for future "sub-menu" in each tab
+    
+    <tabset>
+        <tab *ngFor="let c of categoryMenu; let i = index" [active]="c.isActive" [heading]="c.title" (setCategoryIndex)="changeCategoryIndex(i)">
+            <app-home-woman *ngIf="i == 1"></app-home-woman>
+        </tab>
+    </tabset>
+-->
+</div>
+
+<!--
+<div *ngIf="_categoryIndex == 1">
+    <app-home-woman></app-home-woman>
+</div>
+-->
+
+<!--
+The main idea of render 'app-category-tabs' was to decoupling
+the routing work from the home component
+    <app-category-tabs></app-category-tabs> 
+-->
+
+
+<!--ELIMINAR
 <ngb-carousel *ngIf="popularProducts">
 	<ng-template *ngFor="let item of popularProducts" ngbSlide>
 		<div class="picsum-img-wrapper">
@@ -13,15 +64,20 @@
 		</div>
 	</ng-template>
 </ngb-carousel>
+-->
 
 <div class="product-list-wrapper">
     <h1>Lo más visto</h1>
     <div class="row">
         <div class="col-sm-3" *ngFor="let item of trendyProducts">
             <div class="product-item">
+
+            <!--ELIMINAR-->
             <!-- <div class="product-image"> -->
-                <img src="{{ item.image }}" />
+                <!--ELIMINAR--> <img src="{{ item.image }}" /> <!--ELIMINAR-->
             <!-- </div> -->
+
+            <!--ELIMINAR-->
             <div class="product-details">
                 <h6 class="name-head">{{ item.name }}</h6>
                 <div class="product-price">
@@ -37,6 +93,7 @@
             </div>
             </div>
         </div>
+    <!--ELIMINAR-->
 
         <!--
         <div class="col-sm-3">
@@ -123,6 +180,8 @@
             </div>
         </div>
         -->
+        <!--ELIMINAR-->
     </div>
 
 </div>
+<!--ELIMINAR-->

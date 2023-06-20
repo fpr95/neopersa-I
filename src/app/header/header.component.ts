@@ -11,8 +11,9 @@ import { product } from '../data-type';
 export class HeaderComponent {
 
   menuType:string = 'default';
-  sellerName:string ='';
   searchResult:undefined | product[];
+  isCollapsed:boolean = false;
+  sellerName:string ='';
   userName:string='';
   cartItems = 0;
 

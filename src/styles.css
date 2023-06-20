@@ -1,10 +1,26 @@
+/*
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*/
+
 body {
     font-family: sans-serif;
+    
+    /*
+    box-sizing: inherit;
+    margin: 0;
+    position: relative;
+    padding-bottom: 8rem;
+    */
+    display: grid;
+    min-height: 100vh;
 }
 
+
 .container {
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-top: 0;
 }
 
 .common-form {
@@ -56,4 +72,72 @@ body {
 
 button:disabled{
     cursor: not-allowed;
+}
+
+/* ngx slick carousel related */
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+    /* background-color: #ebf3ef; */
+    border-radius: 50%;
+    padding-top: 1.5px;
+    width: 30px;
+    height: 30px;
+}
+
+/*
+.slick-prev .slick-arrow:before {
+    width: 60px;
+}
+*/
+/*
+.slick-prev, .slick-next {
+    color: black !important;
+    background-color: #ebf3ef;
+    border-radius: 50%;
+    padding-top: 1.5px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+*/
+
+.slick-prev {
+    color: black !important;
+    /* background-color: #ebf3ef; */
+    border-radius: 50%;
+    padding-top: 1.5px;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    transform: scale(1.9);
+}
+
+.slick-prev:hover {
+    transform: scale(2.3);
+    transition: .2s;
+    border: none;
+}
+
+/*
+.slick-prev:after {
+    background-color: #dce3e0;
+}
+*/
+
+.slick-next {
+    color: black !important;
+    /* background-color: #ebf3ef; */
+    border-radius: 50%;
+    padding-top: 1.5px;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    transform: scale(1.9);
+}
+
+.slick-next:hover {
+    transform: scale(2.3);
+    transition: .2s;
+    border: none;
 }
