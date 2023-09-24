@@ -22,7 +22,12 @@ export interface product{
     brand:undefined | string,
     hasDiscount:undefined | boolean,
 
-    image:string,
+    image:undefined | string,
+    image2:undefined | string,
+    image3:undefined | string,
+    image4:undefined | string,
+    image5:undefined | string,
+    image6:undefined | string,
     quantity:undefined | number,
     id:number,
     productId:undefined | number
@@ -34,7 +39,7 @@ export interface cart{
     category:string,
     color:string,
     details:string,
-    image:string,
+    image:undefined | string,
     quantity:undefined | number,
     id:number | undefined,
     userId:number,

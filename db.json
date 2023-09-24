@@ -66,6 +66,8 @@
       "category": "Smartphone",
       "details": "Lo último de la gama alta de Samsung",
       "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fscr.wfcdn.de%2F25940%2FSamsung-Galaxy-S23-Ultra-1673639126-0-0.jpg&f=1&nofb=1&ipt=148536c8b45984e6ffaf7e7e164f0f204701db85443cd93a3f9504a38e6072f9&ipo=images",
+      "image2": "https://www.stuff.tv/wp-content/uploads/sites/2/2022/02/Samsung-Galaxy-S22-Ultra-device-photos-4.jpg?resize=1536,1152",
+      "image3": "https://www.superplanshet.ru/images/Samsung-Galaxy-S23_22557441417.jpg",
       "id": 2
     },
     {
@@ -185,16 +187,19 @@
       "userId": 1,
       "productId": 2,
       "id": 4
+    },
+    {
+      "name": "Anillo Ceremonial Masón",
+      "price": "650000",
+      "color": "gold",
+      "category": "Jewelry",
+      "details": "Anillo de ceremonia con símbolo masón de oro 18k",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Fanillo-masonico-ceremonial-templario-acero-316-chapa-de-oro-D_NQ_NP_9110-MLM20012750497_112013-F.jpg&f=1&nofb=1&ipt=52926647aca6c383a0b1957c1ce7c39cac2068755b3bcf0ce9ad6682c43bb462&ipo=images",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 8,
+      "id": 5
     }
   ],
-  "orders": [
-    {
-      "email": "randomuser@gmail.com",
-      "address": "Av. Mispe Lottas #56",
-      "contact": "956456252",
-      "totalPrice": 447000,
-      "userId": 2,
-      "id": 1
-    }
-  ]
+  "orders": []
 }

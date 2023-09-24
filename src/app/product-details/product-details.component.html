@@ -151,29 +151,55 @@
 
           
           <article class="gallery-wrap">
-            <div class="img-big-wrap img-thumbnail">
-              <a data-fslightbox="mygalley" data-type="image" href="#">
+            <div *ngIf="productData.image" class="img-big-wrap img-thumbnail">
+              <a data-fslightbox="mygalley" data-type="image" href="">
                 <img class="img-fluid" style="height:560px; object-fit: contain;" src="{{ productData.image }}">
               </a>
-            </div> 
+            </div>
+            <div *ngIf="!productData.image" class="img-big-wrap img-thumbnail">
+              <a data-fslightbox="mygalley" data-type="image" href="">
+                <img class="img-fluid" style="height:560px; object-fit: contain;" src="/assets/img/blank_img.png">
+              </a>
+            </div>  
             <!-- img-big-wrap.// -->
             
             <div class="thumbs-wrap d-flex justify-content-evenly my-4">
-              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
-                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
-              </a>
-              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
-                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
-              </a>
-              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
-                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
-              </a>
-              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
-                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
-              </a>
-              <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
-                <img class="img-fluid" width="60" height="60" src="{{ productData.image }}">
-              </a>
+              <!--
+              <div class="my-auto" *ngIf="!productData.image2">
+                <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                  <img class="img-fluid" width="60" height="60" src="/assets/img/blank_img.png">
+                </a>
+              </div>
+            -->
+              <div class="my-auto" *ngIf="productData.image2">
+                <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                  <img class="img-fluid" width="60" height="60" src="{{ productData.image2 }}">
+                </a>
+              </div>
+
+              <div class="my-auto" *ngIf="productData.image3">
+                <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                  <img class="img-fluid" width="60" height="60" src="{{ productData.image3 }}">
+                </a>
+              </div>
+
+              <div class="my-auto" *ngIf="productData.image4">
+                <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                  <img class="img-fluid" width="60" height="60" src="{{ productData.image4 }}">
+                </a>
+              </div>
+
+              <div class="my-auto" *ngIf="productData.image5">
+                <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                  <img class="img-fluid" width="60" height="60" src="{{ productData.image5 }}">
+                </a>
+              </div>
+
+              <div class="my-auto" *ngIf="productData.image6">
+                <a data-fslightbox="mygalley" data-type="image" href="#" class="item-thumb">
+                  <img class="img-fluid" width="60" height="60" src="{{ productData.image6 }}">
+                </a>
+              </div>
             </div> 
             <!-- thumbs-wrap.// -->
           </article>
