@@ -16,8 +16,8 @@ Entre las funciones implementadas hasta el momento se incluyen:
 ## Vista Previa
 
 Algunas vistas implementadas de la UI incluyen la del 'home' para la sección 'MUJER'
-
+![neopersa-woman-home](https://github.com/fpr95/neopersa-I/assets/102566410/70fd099c-e1ed-447d-a9b7-181a3799b5e2)
 ##
 Y la sección que muestra detalles del producto
-
+![neopersa-product-details](https://github.com/fpr95/neopersaI/assets/102566410/bf1cba77-67dc-4adf-9543-765e5a08959e)
 ##
